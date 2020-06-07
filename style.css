@@ -1,0 +1,39 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#banner {
+  background-image: url(./img/banner.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 0;
+}
+
+nav div {
+  width: 1200px;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav div a {
+  text-decoration: none;
+  padding: 0 30px;
+  color: black;
+}
+
+nav div a:hover {
+  color: cornflowerblue;
+}
+/*# sourceMappingURL=style.css.map */
