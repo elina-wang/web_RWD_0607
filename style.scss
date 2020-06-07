@@ -16,8 +16,14 @@
 
 // 導覽列
 nav{
-    background-color: rgba(255,255,255,0.5);
-    // position: fixed;
+    // #RGBA
+    // 0-9 a-f
+    // 00 透明
+    // ff 顯示
+    background-color: #FFFFFF55;
+    // background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    width: 100%;
     padding: 30px 0;
 
     div {
@@ -29,6 +35,8 @@ nav{
             text-decoration: none;
             padding: 0 30px;
             color: black;
+            font-size: 18px;
+            letter-spacing: 3px;
 
             &:hover{
                 color: cornflowerblue;
