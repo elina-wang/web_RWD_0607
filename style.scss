@@ -39,7 +39,7 @@ nav{
             letter-spacing: 3px;
 
             &:hover{
-                color: cornflowerblue;
+                color: gray;
             }
         }
 
@@ -48,5 +48,42 @@ nav{
     
    
 }
+
+// 相片
+#box1{
+    height: 260px;
+    width: 1200px;
+    background-color: skyblue;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    div{
+
+        &:nth-child(1){
+            color: white;
+            font-size: 42px;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+
+        &:nth-child(2){
+            background-image: url(./img/d-beach-1.jpg);
+            background-size: cover;
+        }
+
+        &:nth-child(3){
+            background-image: url(./img/d-beach-2.jpg);
+            background-size: cover;
+        }
+
+
+        
+    }
+
+}
+
 
 

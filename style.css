@@ -38,6 +38,39 @@ nav div a {
 }
 
 nav div a:hover {
-  color: cornflowerblue;
+  color: gray;
+}
+
+#box1 {
+  height: 260px;
+  width: 1200px;
+  background-color: skyblue;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#box1 div:nth-child(1) {
+  color: white;
+  font-size: 42px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: 微軟正黑體;
+}
+
+#box1 div:nth-child(2) {
+  background-image: url(./img/d-beach-1.jpg);
+  background-size: cover;
+}
+
+#box1 div:nth-child(3) {
+  background-image: url(./img/d-beach-2.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
