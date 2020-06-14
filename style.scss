@@ -118,6 +118,10 @@ nav{
 
 }
 
+// 選單
+#menu{
+    display: none;
+}
 
 // RWD 平板 大於等於768, 小於等於1199
 
@@ -128,9 +132,28 @@ nav{
         transition: 0.3s;
     }
 
-    #nav{
+    nav{
         div {
             @include pad();
+            display: none;
+        }
+
+        #menu {
+            display: block;
+            
+            a{
+                display: none;
+
+                &:nth-child(1){
+                    display: block;
+                }
+
+            }
+
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 20px 40px;
+            }
         }
 
     }
@@ -175,10 +198,31 @@ nav{
         transition: 0.3s;
     }
 
-    #nav{
+    nav{
         div {
             @include phone();
+            display: none; 
         }
+
+        #menu {
+            display: block;
+            
+            a{
+                display: none;
+
+                &:nth-child(1){
+                    display: block;
+                }
+
+            }
+
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 10px 40px;
+            }
+        }
+
+
 
     }
 
